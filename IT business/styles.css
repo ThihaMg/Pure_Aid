@@ -1,0 +1,615 @@
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#doctors h3 {
+    color: #12788A;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.filter-options label {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #12788A;
+}
+
+.filter-options select {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+}
+
+.doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.doctor-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+}
+
+.doctor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.doctor-details {
+    flex-grow: 1;
+}
+
+.doctor-details h4 {
+    color: #12788A;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.doctor-details p {
+    color: #666;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.book-button {
+    background-color: #12788A;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.book-button:hover {
+    background-color: #0b5466;
+}
+
+
+#hospitals h3 {
+    color: #12788A;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.city-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.city-selection label {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #12788A;
+}
+
+.city-selection select {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+}
+
+.hospital-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.hospital-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.hospital-card:hover {
+    transform: translateY(-5px);
+}
+
+.hospital-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.hospital-details h4 {
+    color: #12788A;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.hospital-details p {
+    color: #666;
+    font-size: 1.1rem;
+margin-bottom: 5px;
+}
+
+.details-link {
+color: #12788A;
+text-decoration: none;
+font-size: 1.1rem;
+}
+
+\\hopital1
+
+
+
+#hospital-details h3 {
+    color: #12788A;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hospital-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.hospital-image img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hospital-services {
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.hospital-services h4 {
+    color: #12788A;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.hospital-services ul {
+    list-style: none;
+}
+
+.hospital-services li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.rooms-and-fees {
+    margin-bottom: 40px;
+}
+
+.rooms-and-fees h4 {
+    color: #12788A;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.rooms-and-fees table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #12788A;
+}
+
+.rooms-and-fees th, .rooms-and-fees td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.rooms-and-fees th {
+    background-color: #12788A;
+    color: #fff;
+}
+
+.rooms-and-fees td {
+    background-color: #f5f5f5;
+}
+
+.doctors-list {
+    margin-bottom: 40px;
+}
+
+.doctors-list h4 {
+    color: #12788A;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.doctors-list ul {
+    list-style: none;
+}
+
+.doctors-list li {
+    margin-bottom: 20px;
+}
+
+.doctors-list h5 {
+    color: #12788A;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.book-button {
+    background-color: #12788A;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.book-button:hover {
+    background-color: #0b5466;
+}
+
+/* ... (previous styles) */
+
+/* Filter */
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.filter select {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Doctors List */
+.doctors-list ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.doctor-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.doctor-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.doctor-item h5 {
+    color: #12788A;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.doctor-item p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.rooms-and-fees table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #12788A;
+}
+
+.rooms-and-fees th, .rooms-and-fees td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.rooms-and-fees th {
+    background-color: #12788A;
+    color: #fff;
+}
+
+.rooms-and-fees td {
+    background-color: #f5f5f5;
+}
+
+.rooms-and-fees img {
+    max-width: 150px;
+    height: auto;
+}
+
+.doctors-list .book-appointment-button {
+    background-color: #12788A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.doctors-list .book-appointment-button:hover {
+    background-color: #0F5A6F;
+}
+
+
+.hospital-tab a {
+    color: #12788A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hospital-tab a:hover {
+    color: #0F5A6F;
+}
+
+
+
+#booking-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #12788A;
+}
+
+#booking-form h3 {
+    color: #12788A;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #12788A;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #12788A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0F5A6F;
+}
+/*sale*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#medicines h3 {
+    color: #12788A;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-bar {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+}
+
+.medicines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.medicine-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.medicine-card:hover {
+    transform: translateY(-5px);
+}
+
+.medicine-details {
+    flex-grow: 1;
+}
+
+.medicine-details h4 {
+    color: #12788A;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.medicine-details p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.sale-button {
+    background-color: #12788A;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.sale-button:hover {
+    background-color: #0b5466;
+}
+
+
+.medicine-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.medicine-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.filter-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #12788A;
+    font-size: 1.5rem;
+}
+
+.filter-container option {
+    color: #12788A;
+    font-size: 1rem;
+}
+
+.doctor-card {
+    border: .5px solid #12788A;
+    border-radius: 3px;
+}
+.filter-container select {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.doctors-container img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+
+.doctor-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #12788A;
+    font-size: 1rem;
+}
+
+.booking-button {
+    
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #12788A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.booking-button:hover {
+    background-color: #0056b3;
+    transform: translate(-3px);
+}
+
+.doctors-container {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}

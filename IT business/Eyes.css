@@ -1,0 +1,90 @@
+.eye-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.text {
+    
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+.disease-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.diseases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.disease-card 
+{ 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    
+    transition: transform 0.2s;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    color: #12788A;
+    font-size: 1rem;
+}
+
+.disease-cards :hover {
+    transform: translateY(-5px);
+   
+}
+
+.disease-card .disease-icon {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.disease-card h2 {
+    color: #12788A;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.para  p{
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+
+.disease-card img {
+    width: 200px;
+    height: 150px;
+    
+    margin-bottom: 20px;
+
+}
+
+.disease-card button {
+    background-color: #12788A;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.desease-card:hover {
+    transform: translateY(-5px);
+    background-color: #0b5466;
+}
